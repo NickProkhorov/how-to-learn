@@ -30,18 +30,21 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   align-content: center;
   position: relative;
   z-index: 2;
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
+  margin: 0;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -64,7 +67,7 @@
   bottom: 0px;
   right: 0px;
   z-index: 1;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -98,6 +101,7 @@
   color: #2f80ed;
   display: inline-block;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .two-columns__main-text {
@@ -114,7 +118,7 @@
   font-weight: normal;
 }
 
-.two-columns__paragraph:nth-of-type(3n) {
+.two-columns__paragraph:last-child {
   margin: 0;
 }
 
@@ -169,7 +173,7 @@
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
-  margin: 0 auto 20px;
+  margin: 0 auto 0px;
 }
 
 .table__text {
@@ -184,6 +188,7 @@
   position: relative;
   padding-top: 100px;
   background:  #f2f2f2 url(../images/feynman.png) no-repeat left bottom / 867px 637px;
+  box-sizing: border-box;
 }
 
 .feynman__title {
@@ -192,7 +197,7 @@
   line-height: 1.15;
   font-weight: bold;
   text-align: center;
-  margin: 70px auto;
+  margin: 0 auto 70px;
  }
 
 .feynman__subtitle {
@@ -222,7 +227,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: -2;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -269,7 +274,7 @@
 }
 
 .footer {
-  min-width: 350px;
+  min-height: 350px;
   background-color: #1f1f1f;
   position: relative;
   margin: 0;
@@ -283,6 +288,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 60px auto 40px;
+}
+
+.footer-column {
+  color: #FFFFFF;
 }
 
 .footer__column_content_copyright {
@@ -300,17 +309,8 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  color: #FFFFFF;
   margin-bottom: 18px;
   display: inline-block;
-}
-
-.footer__column_content_info {
-  color: #FFFFFF;
-}
-
-.footer__column_content_social {
-  color: #FFFFFF;
 }
 
 .footer__column-heading {
