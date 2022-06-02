@@ -6,8 +6,8 @@ and tell you about special learning techniques.
 
 ## The Main goals of that project are
 1. *Studing HTML and CSS*;
-2. *Studing BEM Methodology;
-3. *Find out new Learning best practiсs*
+2. *Studing BEM Methodology*;
+3. *Find out new Learning best practiсs*;
 
 When i built that page i used a lot of css-properties such as flex-box, position, animation, also i built my html with help
 different semantic elements such as: section, article, iframe, img and many others.
